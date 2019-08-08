@@ -81,7 +81,7 @@
   <title>Aitor Martinez</title>
 </head>
 
-<body onload="loadDynamicContent('home.html')">
+<body onload="loadDynamicContent('portfolio.html')">
   <main id="app" >
     <nav id="global-nav" class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -103,7 +103,7 @@
               </a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#" onclick="loadDynamicContent('portfolio.html');return false;">
+              <a class="nav-link" href="#" onclick="loadDynamicContent('portfolio-old.html');return false;">
                 Portfolio
               </a>
             </li>
@@ -135,41 +135,32 @@
                       Dynamic content goes here  
                     -->
     </div>
-    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <footer class="bg-dark py-4">
       <div class="container">
-        <ul class="list-group list-group-horizontal-lg">
-          <li class="list-group-item flex-fill">
-            <a href="https://duckduckgo.com/?natb=v178-3__&cp=atbhc" target="_blank" style="text-decoration: none">
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="mt-0"><i class="fab fa-linkedin"></i> Aitor Martinez</h5>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="list-group-item flex-fill">
-            <a href="https://twitter.com/KintsugiDev" target="_blank" style="text-decoration: none">
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="mt-0"><i class="fab fa-twitter"></i> @KintsugiDev</h5>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="list-group-item flex-fill">
-            <a href="https://twitter.com/KintsugiDev" target="_blank" style="text-decoration: none">
-              <div class="media">
-                <div class="media-body">
-                  <h5 class="mt-0"><i class="fas fa-envelope"></i> aitor96mar@protonmail.com</h5>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="container text-center">
-        <small>Copyright &copy; 2019 - <span eng-text>Made by </span><span spa-text>Creado por </span>Aitor
-          Martinez</small>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <h5>Explore</h5>
+            <ul class="list-unstyled bottom-nav">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> Home</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> About</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> FAQ</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> Get Started</a></li>
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> Videos</a></li>
+            </ul>
+          </div>
+          <div class="cold-md-3">
+            <h5>Follow me</h5>
+            <ul id="follow-me" class="list-group list-unstyled list-group-horizontal">
+              <li><a href="javascript:void();"><i class="fab fa-github"></i></a></li>
+              <li><a href="javascript:void();"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy text-center">
+          <small>Copyright &copy; 2019 - <span eng-text>Made by </span><span spa-text>Creado por </span>Aitor Martinez</small>
+        </div>
       </div>
     </footer>
   </main>
