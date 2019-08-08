@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>.: NOTAS :.</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <main id="app">
+      <!-- NOTAS -->
+      <aside>
+        <div v-for="(note, index) in notes" class="nota">
+          <i v-show="index == 0" style="color: grey" class="fa fa-arrow-up" aria-hidden="true"></i>
+          <i v-show="index > 0" v-on:click="moveUp(index)" style="color: rgb(38, 105, 121); cursor: pointer" class="fa fa-arrow-up" aria-hidden="true"></i>
+          <i v-show="index < notes.length - 1" v-on:click="moveDown(index)" style="cursor: pointer" class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i v-show="index == notes.length - 1" style="color: grey" class="fa fa-arrow-down" aria-hidden="true"></i>
+          <i class="fa fa-sticky-note-o fa-2x" aria-hidden="true" v-on:click="viewSelectedNote(index)" v-on:dblclick="editSelectedNote(index)"></i>
+          <span v-on:click="viewSelectedNote(index)" v-on:dblclick="editSelectedNote(index)" class="noselect"> {{ note.title }} </span>
+          <i class="fa fa-window-close-o" aria-hidden="true" v-on:click="deleteNote(index)"></i>
+        </div>
+      </aside>
+      <!-- CONTENIDO -->
+      <content>
+        <!-- VISUALIZACION -->
+        <div v-show="viewMode" id="view">
+          <h1> {{ selectedNote.title }} </h1>
+          <h4> {{ selectedNote.date }} </h3>
+          <p> {{ selectedNote.content }} </p>
+        </div>
+        <!-- EDITOR -->
+        <div v-show="editMode">
+          <form>
+            <table id="editor-table">
+              <tr>
+                <td>Title</td>
+                <td><input required type="text" placeholder="Titulo" v-model="selectedNote.title"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><textarea required rows="25" placeholder="Contenido" v-model="selectedNote.content"></textarea></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+        <i class="fa fa-floppy-o fa-4x" aria-hidden="true" v-show="editMode" v-on:click="saveNote()"></i>
+        <i class="fa fa-plus fa-4x" aria-hidden="true" v-on:click="addNewNote()"></i>
+      </content>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html> 
