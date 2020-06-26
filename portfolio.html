@@ -1,4 +1,85 @@
 <div class="container">
+  <!-- RTG -->
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <div class="card-media">
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/HLvutyF362I" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Final Year Project: Real-time Graphics Library for Rasterized Pipelines</h5>
+          <p class="card-text">
+            This project aims to create a command-based Graphics Library that lets the user implement
+            any advanced rasterized graphics techniques as easily as possible.
+            The dissertation reflects the understanding of low-level APIs as well as
+            advanced graphics techniques such as PBR and IBL.
+          </p>
+        </div>
+        <button class="btn btn-dark btn-expand" type="button" data-toggle="collapse" data-target="#collapse-rtg"
+          aria-expanded="false" aria-controls="collapse-rtg">
+          Features
+        </button>
+      </div>
+      <div class="collapse" id="collapse-rtg">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h5>DirectX 12</h5>
+            <p>
+              <b>DirectX 12</b> is a low-level graphics API made by Microsoft for Windows 10 and XBox consoles.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Physically Based Rendering</h5>
+            <p>
+              Physically Based Rendering or <b>PBR</b> is a method of rendering that simulates how light
+              interacts with surfaces in the most physically accurate manner. 
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Image Based Lighting</h5>
+            <p>
+              Image Based Lighting or IBL is a series of techniques that uses images of the environment as
+              base light parameters. 
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Deferred Rendering</h5>
+            <p>
+              Deferred rendering is a rendering technique which postpones light calculations into a final render pass.
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Fully dynamic lights</h5>
+            <p>
+              
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Shadow Mapping</h5>
+            <p>
+              
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Normal Mapping</h5>
+            <p>
+              
+            </p>
+          </li>
+          <li class="list-group-item">
+            <h5>Parallax Mapping</h5>
+            <p>
+              
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- !RTG -->
   <!-- Old Town Stories -->
   <div class="card mb-3">
     <div class="row no-gutters">
@@ -17,7 +98,7 @@
             worked for 8 months to complete the demo which features a <b>tutorial, a story-mode and an arena</b>.
           </p>
         </div>
-        <button class="btn btn-primary btn-expand" type="button" data-toggle="collapse" data-target="#wtf-ots"
+        <button class="btn btn-dark btn-expand" type="button" data-toggle="collapse" data-target="#wtf-ots"
           aria-expanded="false" aria-controls="wtf-ots">
           Contributions
         </button>
@@ -34,10 +115,8 @@
             <h5>VR optimization</h5>
             <p>
               Making sure the project had a stable 90fps was a challenge due to the realistic look of the game. Some
-              of the
-              optimizations were: making sure there were no transparencies, level-streaming, using as simple as
-              posible materials,
-              HLODS, static lights...
+              of the optimizations were: making sure there were no transparencies, level-streaming, using as simple as
+              posible materials, HLODS, static lights...
           </li>
           <li class="list-group-item">
             <h5>Magnetic Shield</h5>
@@ -48,7 +127,12 @@
           <li class="list-group-item">
             <h5>VFX</h5>
             <p>
-              Shield which stops, accumulates and returns enemy bullets.
+              <ul>
+                <li>Bullet trails.</li>
+                <li>Magnetic Shield.</li>
+                <li>Smoke particles.</li>
+                <li>Gun firing effect.</li>
+              </ul>
             </p>
           </li>
           <li class="list-group-item">
@@ -78,45 +162,38 @@
             GNX Engine is a multiplatform (Windows/Linux) OpenGL 3D engine featuring a multithreaded workflow using <b>Tasks and Render Queues</b>, as well as, <b>scripting (AngelScript), FXAA, Bloom and HDR</b>.
           </p>
         </div>
-        <button class="btn btn-primary btn-expand" type="button" data-toggle="collapse" data-target="#collapseGNX"
-          aria-expanded="false" aria-controls="collapseGNX">
+        <button class="btn btn-dark btn-expand" type="button" data-toggle="collapse" data-target="#collapse-gnx"
+          aria-expanded="false" aria-controls="collapse-gnx">
           Features
         </button>
       </div>
-      <div class="collapse" id="collapseGNX">
+      <div class="collapse" id="collapse-gnx">
         <ul class="list-group">
           <li class="list-group-item">
-            <h5>VR integration</h5>
+            <h5>C++11</h5>
+          </li>
+          <li class="list-group-item">
+            <h5>OpenGL 3.3</h5>
+          </li>
+          <li class="list-group-item">
+            <h5>AngelScript</h5>
+          </li>
+          <li class="list-group-item">
+            <h5>Effects</h5>
             <p>
-              The player's Pawn. VR related input and hand animations integration.
+              <ul>
+                <li>FXAA</li>
+                <li>Bloom</li>
+                <li>HDR</li>
+              </ul>
             </p>
           </li>
           <li class="list-group-item">
-            <h5>VR optimization</h5>
-            <p>
-              Making sure the project had a stable 90fps was a challenge due to the realistic look of the game. Some
-              of the
-              optimizations were: making sure there were no transparencies, level-streaming, using as simple as
-              posible materials,
-              HLODS, static lights...
-          </li>
-          <li class="list-group-item">
-            <h5>Magnetic Shield</h5>
-            <p>
-              Shield which stops, accumulates and returns enemy bullets.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>VFX</h5>
-            <p>
-              Shield which stops, accumulates and returns enemy bullets.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>Tutorial</h5>
-            <p>
-              Event based tutorial which triggers new actions everytime the player interacts with the world.
-            </p>
+            <h5>Tools</h5>
+            <ul>
+              <li>Visual Studio 2017</li>
+              <li><a href="https://renderdoc.org/" target="_blank">RenderDoc</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -156,9 +233,9 @@
       </div>
       <div class="col-md-8 position-relative">
         <div class="card-body">
-          <h5 class="card-title"> Ray Casting</h5>
+          <h5 class="card-title">Voxel Terrain</h5>
           <p class="card-text">
-            TODO
+            <b>Voxel Terrain</b> is a low-level (ARM assembly) implementation of height-map rendering used in old-school games.     
           </p>
         </div>
       </div>
@@ -178,51 +255,10 @@
         <div class="card-body">
           <h5 class="card-title">Arena of Warfare</h5>
           <p class="card-text">
-            Arena of Warfare is a tower defense mobile game for Android devices. The main goal is to defend your base against
-            enemy soldiers, planes and tanks. 
+            <b>Arena of Warfare</b> is a tower defense mobile game for Android devices. The main goal is to defend your base against
+            enemy soldiers, planes and tanks. Made with <b>Unity</b>. 
           </p>
         </div>
-        <button class="btn btn-primary btn-expand" type="button" data-toggle="collapse" data-target="#collapseExample"
-          aria-expanded="false" aria-controls="collapseExample">
-          Contributions
-        </button>
-      </div>
-      <div class="collapse" id="collapseExample">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <h5>VR integration</h5>
-            <p>
-              The player's Pawn. VR related input and hand animations integration.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>VR optimization</h5>
-            <p>
-              Making sure the project had a stable 90fps was a challenge due to the realistic look of the game. Some
-              of the
-              optimizations were: making sure there were no transparencies, level-streaming, using as simple as
-              posible materials,
-              HLODS, static lights...
-          </li>
-          <li class="list-group-item">
-            <h5>Magnetic Shield</h5>
-            <p>
-              Shield which stops, accumulates and returns enemy bullets.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>VFX</h5>
-            <p>
-              Shield which stops, accumulates and returns enemy bullets.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>Tutorial</h5>
-            <p>
-              Event based tutorial which triggers new actions everytime the player interacts with the world.
-            </p>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
@@ -238,52 +274,11 @@
       </div>
       <div class="col-md-8 position-relative">
         <div class="card-body">
-          <h5 class="card-title">Boozy Driver</h5>
+          <h5 class="card-title">Game Jam 2018: Boozy Driver</h5>
           <p class="card-text">
-            TODO
+            Boozy Driver is voice-commanded video game in which the player controls a car by giving instructions, such as, "Go" and "Stop".   
           </p>
         </div>
-        <button class="btn btn-primary btn-expand" type="button" data-toggle="collapse" data-target="#collapseExample"
-          aria-expanded="false" aria-controls="collapseExample">
-          Contributions
-        </button>
-      </div>
-      <div class="collapse" id="collapseExample">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <h5>VR integration</h5>
-            <p>
-              The player's Pawn. VR related input and hand animations integration.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>VR optimization</h5>
-            <p>
-              Making sure the project had a stable 90fps was a challenge due to the realistic look of the game. Some
-              of the
-              optimizations were: making sure there were no transparencies, level-streaming, using as simple as
-              posible materials,
-              HLODS, static lights...
-          </li>
-          <li class="list-group-item">
-            <h5>Magnetic Shield</h5>
-            <p>
-              Shield which stops, accumulates and returns enemy bullets.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>VFX</h5>
-            <p>
-              Shield which stops, accumulates and returns enemy bullets.
-            </p>
-          </li>
-          <li class="list-group-item">
-            <h5>Tutorial</h5>
-            <p>
-              Event based tutorial which triggers new actions everytime the player interacts with the world.
-            </p>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
