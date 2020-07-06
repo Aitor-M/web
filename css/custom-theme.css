@@ -141,11 +141,7 @@ h1, h2, h3, h4, h5, b {
   transition: all .3s ease-in-out;
 }
 
-.btn-expand {
-  position: absolute;
-  left:20px;
-  bottom:20px;
-}
+
 
 a {
   color: var(--main-color);
@@ -158,6 +154,12 @@ a:hover {
 }
 
 @media (min-width: 1001px) {
+  .btn-expand {
+    position: absolute;
+    left:20px;
+    bottom:20px;
+  }
+
   #global-nav {
     position: fixed;
     top: 0;
@@ -250,6 +252,11 @@ a:hover {
 }
 
 @media (min-width: 320px) and (max-width: 1000px) {
+  .btn-expand {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
   #global-nav {
     position: fixed;
     top: 0;
