@@ -415,3 +415,7 @@ a:hover {
 .collapse.show {
   width: 100%;
 }
+
+.carousel-caption {
+  background-color: #000a;
+}

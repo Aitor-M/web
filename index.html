@@ -82,7 +82,7 @@
   <title>Aitor Martinez</title>
 </head>
 
-<body onload="loadDynamicContent('portfolio.html')">
+<body onload="loadDynamicContent('home.html')">
   
   <main id="app" >
     <nav id="global-nav" class="navbar navbar-expand-lg navbar-dark">
@@ -99,12 +99,6 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item ">
-              <a class="nav-link" href="#" onclick="loadDynamicContent('about-me.html');return false;">
-                <span eng-text>About me</span>
-                <span spa-text>Sobre mi</span>
-              </a>
-            </li>
-            <li class="nav-item ">
               <a class="nav-link" href="#" onclick="loadDynamicContent('portfolio.html');return false;">
                 Portfolio
               </a>
@@ -118,10 +112,20 @@
           </ul>
           <div id="lang-selector" class="btn-group btn-group-toggle" data-toggle="buttons">
             <label id="eng-button" class="btn btn-secondary active" onclick="useEnglish()">
-              <input type="radio" name="options" id="useEnglish" autocomplete="off"> ENG
+              <input type="radio" name="options" id="useEnglish" autocomplete="off"> 
+              <!--
+                Image from https://www.flaticon.com/free-icon/united-kingdom_3013972?term=flag&page=1&position=24
+              -->
+              <img src="img/united-kingdom.png" width="25" height="auto" style="border-style: solid; border-width: 1px;">
+              ENG
             </label>
             <label id="spa-button" class="btn btn-secondary" onclick="useSpanish()">
-              <input type="radio" name="options" id="useSpanish" autocomplete="off"> ESP
+              <input type="radio" name="options" id="useSpanish" autocomplete="off">
+              <!--
+                Image from https://www.flaticon.com/free-icon/spain_3013899?term=flag&page=1&position=20
+              -->
+              <img src="img/spain.png" width="25" height="auto" style="border-style: solid; border-width: 1px;">
+              ESP
             </label>
           </div>
         </div>
@@ -142,21 +146,33 @@
         <div class="row">
           <div class="col-md-3"></div>
           <div class="col-md-3">
-            <h5>Explore</h5>
+            <h5>
+              <span eng-text>Keep exploring</span>
+              <span spa-text>Contenido</span>
+            </h5>
             <ul class="list-unstyled bottom-nav">
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> Home</a></li>
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> About</a></li>
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> FAQ</a></li>
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> Get Started</a></li>
-              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i> Videos</a></li>
+              <li><a href="javascript:void()" onclick="loadDynamicContent('home.html');return false;"><i class="fa fa-angle-double-right"></i> 
+                <span eng-text>Home</span>
+                <span spa-text>Página principal</span>
+              </a></li>
+              <li><a href="javascript:void()" onclick="loadDynamicContent('portfolio.html');return false;"><i class="fa fa-angle-double-right"></i> 
+                Portfolio
+              </a></li>
+              <li><a href="javascript:void()" onclick="loadDynamicContent('studies.html');return false;"><i class="fa fa-angle-double-right"></i>
+                <span eng-text>Studies</span>
+                <span spa-text>Estudios</span>
+              </a></li>
             </ul>
           </div>
-          <div class="cold-md-3">
-            <h5>Follow me</h5>
+          <div class="col-md-3">
+            <h5>
+              <span eng-text>Follow me</span>
+              <span spa-text>Conóceme</span>
+            </h5>
             <ul id="follow-me" class="list-group list-unstyled list-group-horizontal">
               <li><a href="https://github.com/Aitor-M" target="_blank"><i class="fab fa-github"></i></a></li>
               <li><a href="https://www.linkedin.com/in/aitor-martinez-5715281a8/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://twitter.com/KintsugiDev" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="javascript:void()" target="_blank"><i class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
         </div>
