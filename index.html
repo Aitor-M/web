@@ -28,7 +28,7 @@
           ,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.,@@@@@@@@@*@.@#@@@@@@ @@@@@@#@.@*@@@@@@@@@,.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,          
      ,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@* &@@@@@@*@@(@@@@@@,@@@@@@(@@/@@@@@@&.*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&.     
                                                                  &@& .@@@@@@@@@@@@@@@@@@&  @@&                                                                 
-                                                                  /@%    &@@@@@@@@@@@&    #@/                                                 Made by Aitor Martinez                                   
+                                                                  /@%    &@@@@@@@@@@@&    #@/                                                 Web Made by Aitor Martinez                                   
                                                 .%@@@@@@@@@@@@     @* /@,             .@( *@    .@@@@@@@@@@@@%,
                                           .&@@@@@@@@@@@@@@@@@@@@   @@@@(               %@@@@   @@@@@@@@@@@@@@@@@@@@%.                                          
                                     ,&@@@@@@@@@@@@@@@@@@@@@@@.     @@@@@@@@.       /@@@@@@@@     .@@@@@@@@@@@@@@@@@@@@@@@&,                                    
@@ -78,6 +78,7 @@
   <link rel="stylesheet" href="css/custom-theme.css">
   <link rel="stylesheet" href="css/background.css">
   <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 
   <title>Aitor Martinez</title>
 </head>
@@ -107,6 +108,12 @@
               <a class="nav-link" href="#" onclick="loadDynamicContent('studies.html');return false;">
                 <span eng-text>Studies</span>
                 <span spa-text>Estudios</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="loadDynamicContent('jobs.html');return false;">
+                <span eng-text>Jobs</span>
+                <span spa-text>Experiencia laboral</span>
               </a>
             </li>
           </ul>
@@ -162,6 +169,10 @@
                 <span eng-text>Studies</span>
                 <span spa-text>Estudios</span>
               </a></li>
+              <li><a href="javascript:void()" onclick="loadDynamicContent('jobs.html');return false;"><i class="fa fa-angle-double-right"></i>
+                <span eng-text>Jobs</span>
+                <span spa-text>Experiencia laboral</span>
+              </a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -177,7 +188,7 @@
           </div>
         </div>
         <div class="copy text-center">
-          <small>Copyright &copy; 2020 - <span eng-text>Made by </span><span spa-text>Creado por </span>Aitor Martinez</small>
+          <small>Copyright &copy; 2021 - <span eng-text>Made by </span><span spa-text>Creado por </span>Aitor Martinez</small>
         </div>
       </div>
     </footer>
@@ -192,8 +203,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <!-- development version, includes helpful console warnings -->
   <script src="js/main.js"></script>
-  <script src="js/portfolio.js"></script>
   <script>
     $(document).ready(function () {
       var scrollTop = 0;
